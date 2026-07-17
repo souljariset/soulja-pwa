@@ -3,7 +3,7 @@
    Production Service Worker
 ========================================== */
 
-const VERSION = "1.1.0";
+const VERSION = "1.1.1";
 const CACHE_NAME = `soulja-${VERSION}`;
 
 /* ==========================================
@@ -150,7 +150,7 @@ self.addEventListener("fetch",event=>{
 
                     const cache = await caches.open(CACHE_NAME);
 
-                    cache.put("/",network.clone());
+                    cache.put(event.request, network.clone());
 
                     return network;
 
