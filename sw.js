@@ -3,7 +3,7 @@
    Production Service Worker
 ========================================== */
 
-const VERSION = "1.1.1";
+const VERSION = "1.1.2";
 const CACHE_NAME = `soulja-${VERSION}`;
 
 /* ==========================================
@@ -18,6 +18,7 @@ const PRECACHE = [
     "/input.html",
     "/menu.html",
     "/recommendation.html",
+    "/offline.html",
 
     "/manifest.json",
 
@@ -166,7 +167,7 @@ self.addEventListener("fetch",event=>{
 
                         ||
 
-                        await cache.match("/")
+                        await cache.match("/offline.html")
 
                         ||
 
