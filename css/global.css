@@ -1,0 +1,347 @@
+/* ==========================================
+   SOULJA DESIGN SYSTEM
+   GLOBAL.CSS
+========================================== */
+
+/* ==========================================
+   RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+
+    /* ===============================
+       COLOR
+    =============================== */
+
+    --primary:#1E5AA6;
+    --primary-light:#3A76C4;
+    --primary-dark:#184A89;
+
+    --background:#F7F7F7;
+    --surface:#FFFFFF;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --border:#DDDDDD;
+
+    --success:#28A745;
+    --danger:#DC3545;
+    --warning:#FFC107;
+
+    /* ===============================
+       LAYOUT
+    =============================== */
+
+    --page-width:800px;
+    --page-height:1280px;
+
+    --container-padding:40px;
+
+    /* ===============================
+       COMPONENT
+    =============================== */
+
+    --logo-width:260px;
+
+    --button-height:72px;
+    --button-radius:40px;
+
+    --input-height:72px;
+
+    --icon-circle:72px;
+
+    --card-radius:24px;
+
+    --chip-height:42px;
+
+    /* ===============================
+       SPACING
+    =============================== */
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:36px;
+    --space-xl:48px;
+    --space-2xl:64px;
+
+    /* ===============================
+       SHADOW
+    =============================== */
+
+    --shadow-1:0 4px 12px rgba(0,0,0,.08);
+
+    --shadow-2:0 10px 24px rgba(0,0,0,.12);
+
+    --shadow-3:0 18px 28px rgba(0,0,0,.18);
+
+    /* ===============================
+       TRANSITION
+    =============================== */
+
+    --transition:.25s ease;
+
+}
+
+/* ==========================================
+   HTML
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:var(--page-width);
+
+    min-height:var(--page-height);
+
+    background:var(--surface);
+
+    position:relative;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+p{
+
+    line-height:1.6;
+
+}
+
+small{
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================
+   LINK
+========================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+button,
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F2F2F2;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#CFCFCF;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#B5B5B5;
+
+}
+
+/* ==========================================
+   UTILITY
+========================================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+.h-100{
+
+    height:100%;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.gap-sm{
+
+    gap:var(--space-sm);
+
+}
+
+.gap-md{
+
+    gap:var(--space-md);
+
+}
+
+.gap-lg{
+
+    gap:var(--space-lg);
+
+}

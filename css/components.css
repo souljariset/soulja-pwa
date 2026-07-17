@@ -1,0 +1,399 @@
+/* ==========================================
+   SOULJA DESIGN SYSTEM
+   COMPONENTS.CSS
+========================================== */
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:100%;
+
+    height:var(--button-height);
+
+    border:none;
+
+    border-radius:var(--button-radius);
+
+    font-size:28px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    user-select:none;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+    box-shadow:var(--shadow-2);
+
+}
+
+.btn-outline{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid var(--border);
+
+}
+
+.btn-icon{
+
+    width:32px;
+
+    height:32px;
+
+}
+
+
+/* ==========================================
+   RIPPLE
+========================================== */
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    background:rgba(255,255,255,.35);
+
+    animation:ripple .65s ease-out;
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section{
+
+    width:100%;
+
+    border-top:2px solid var(--border);
+
+    padding-top:var(--space-md);
+
+    margin-bottom:var(--space-lg);
+
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:28px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+    margin-bottom:4px;
+
+}
+
+.section-title p{
+
+    font-size:16px;
+
+    color:var(--text-light);
+
+}
+
+.circle-icon{
+
+    width:var(--icon-circle);
+
+    height:var(--icon-circle);
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.circle-icon img{
+
+    width:36px;
+
+}
+
+
+/* ==========================================
+   OPTION CARD
+========================================== */
+
+.option-card{
+
+    background:white;
+
+    border:2px solid var(--border);
+
+    border-radius:var(--card-radius);
+
+    min-height:130px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    color:var(--primary);
+
+}
+
+.option-card img{
+
+    width:54px;
+
+}
+
+.option-card span{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+.option-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-2);
+
+}
+
+.option-card.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+
+/* ==========================================
+   MOOD CARD
+========================================== */
+
+
+
+.mood-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-2);
+
+}
+
+.mood-card.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+
+/* ==========================================
+   GENDER CARD
+========================================== */
+
+
+
+.gender-card:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================
+   CHIP
+========================================== */
+
+.chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    height:var(--chip-height);
+
+    padding:0 18px;
+
+    border:2px solid var(--border);
+
+    border-radius:999px;
+
+    background:white;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.chip img{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.chip:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.chip.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.textbox{
+
+    width:100%;
+
+    height:var(--input-height);
+
+    padding:0 20px;
+
+    border:2px solid var(--border);
+
+    border-radius:18px;
+
+    background:white;
+
+    font-size:20px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+.textbox:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(30,90,166,.12);
+
+}
+
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card{
+
+    background:white;
+
+    border-radius:var(--card-radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-1);
+
+    transition:var(--transition);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-2);
+
+}

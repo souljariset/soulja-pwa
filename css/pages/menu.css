@@ -1,0 +1,1036 @@
+/* ==========================================
+   MENU PAGE
+========================================== */
+
+.menu-page{
+
+    display:flex;
+    position: relative;
+
+    flex-direction:column;
+
+    background:#F7F7F7;
+
+    width:800px;
+
+    height:1280px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.menu-header{
+
+    height:90px;
+
+    padding:0 36px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:var(--background);
+
+    box-shadow:none;
+    border:none;
+
+}
+
+.menu-header .logo{
+
+    width:75px;
+
+    height:auto;
+
+}
+
+.back-button{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 24px rgba(30,90,166,.20);
+
+    transition:.25s;
+
+}
+
+.back-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 14px 30px rgba(30,90,166,.28);
+
+}
+
+.back-button:active{
+
+    transform:scale(.96);
+
+}
+
+.back-button .material-symbols-outlined{
+
+    font-size:34px;
+
+    color:#FFFFFF;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.menu-main{
+
+    flex:1;
+
+    display:flex;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.menu-sidebar{
+
+    width:96px;
+
+    background:transparent;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    justify-content:flex-start;
+
+    padding-top:20px;
+
+}
+
+/* ==========================================
+   CATEGORY
+========================================== */
+
+.category-item{
+
+    width:88px;
+
+    height:300px;
+
+    padding-top: 10px;
+    padding-bottom: 38px;
+
+    border:none;
+
+    border-radius:15px 10px 10px 70px;
+
+    background:linear-gradient(
+        315deg,
+        #3A76C4 0%,
+        #1E5AA6 25%,
+        #184A89 100%
+    );
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    writing-mode:vertical-rl;
+
+    transform:rotate(180deg);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    line-height: 1.3;
+
+    letter-spacing:.5px;
+
+    transition:.25s;
+
+    position:relative;
+
+    z-index:1;
+    box-shadow:
+
+        0 6px 16px rgba(0,0,0,.12);
+     border-top:1px solid rgba(255,255,255,.18);    
+
+}
+
+.category-item + .category-item{
+
+    margin-top:-58px;
+
+}
+
+.category-item:hover{
+
+    background:linear-gradient(
+        315deg,
+        #5B91D6 0%,
+        #3A73BC 55%,
+        #255A9D 100%
+    );
+
+    transform:rotate(180deg) translateX(-6px);
+
+    transition:.2s ease;
+
+}
+
+.category-item.active{
+
+    background:linear-gradient(
+        315deg,
+        #5B91D6 0%,
+        #3A73BC 55%,
+        #255A9D 100%
+    );
+
+    transform:rotate(180deg) translateX(-8px);
+
+}
+
+.category-item.active:hover{
+
+    background:linear-gradient(
+
+        315deg,
+        #5B91D6 0%,
+        #3A73BC 55%,
+        #255A9D 100%
+
+    );
+
+}
+
+.category-item.active .category-text{
+
+    color:#FFFFFF;
+
+}
+/* ==========================================
+   CONTENT
+========================================== */
+
+.menu-content{
+
+    flex:1;
+
+    padding:28px;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+}
+
+.menu-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.menu-content::-webkit-scrollbar-thumb{
+
+    background:#D5D5D5;
+
+    border-radius:999px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.menu-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+    align-content:start;
+
+}
+
+/* ==========================================
+   MENU CARD
+========================================== */
+
+.menu-card{
+
+    background:#FFFFFF;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
+
+}
+
+.menu-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.menu-image{
+
+    width:100%;
+
+    height:220px;
+
+    background:#FFFFFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.menu-image img{
+
+    width:170px;
+
+    height:170px;
+
+    object-fit:contain;
+
+    transition:.3s;
+
+}
+
+.menu-card:hover .menu-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.menu-info{
+
+    padding:20px;
+
+}
+
+/* ==========================================
+   NAME
+========================================== */
+
+.menu-info h3{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    line-height:1.3;
+
+    margin-bottom:8px;
+
+}
+
+/* ==========================================
+   CATEGORY
+========================================== */
+
+.menu-info .menu-category{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+.menu-description{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    line-height:1.5;
+
+    height:42px;
+
+    overflow:hidden;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+    line-clamp: 2;
+
+    -webkit-box-orient:vertical;
+
+    margin-bottom:14px;
+
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.menu-price{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+/* ==========================================
+   MENU BADGE
+========================================== */
+
+.menu-badge{
+
+    position:absolute;
+
+    top:14px;
+
+    left:14px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#FFB800;
+
+    color:#FFFFFF;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    z-index:5;
+
+}
+
+.menu-badge.featured{
+
+    background:var(--primary);
+
+}
+
+.menu-badge.bestseller{
+
+    background:#FF8A00;
+
+}
+
+/* ==========================================
+   CARD POSITION
+========================================== */
+
+.menu-card{
+
+    position:relative;
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.menu-card:hover .menu-info h3{
+
+    color:var(--primary);
+
+}
+
+.menu-card:hover .menu-price{
+
+    transform:scale(1.03);
+
+}
+
+.menu-price{
+
+    transition:.25s;
+
+}
+
+/* ==========================================
+   APPEAR ANIMATION
+========================================== */
+
+.menu-card{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    animation:fadeMenu .45s ease forwards;
+
+}
+
+.menu-card:nth-child(1){animation-delay:.05s;}
+
+.menu-card:nth-child(2){animation-delay:.10s;}
+
+.menu-card:nth-child(3){animation-delay:.15s;}
+
+.menu-card:nth-child(4){animation-delay:.20s;}
+
+.menu-card:nth-child(5){animation-delay:.25s;}
+
+.menu-card:nth-child(6){animation-delay:.30s;}
+
+.menu-card:nth-child(7){animation-delay:.35s;}
+
+.menu-card:nth-child(8){animation-delay:.40s;}
+
+@keyframes fadeMenu{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(24px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   SCROLL BEHAVIOR
+========================================== */
+
+.menu-content{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+}
+/* ==========================================
+   TABLET LAYOUT (800 x 1280)
+
+
+@media screen and (max-width:900px){
+
+    .menu-page{
+
+        width:100%;
+
+        height:100vh;
+
+    }
+
+    .menu-header{
+
+        padding:0 24px;
+
+    }
+
+    .menu-sidebar{
+
+        width:130px;
+
+    }
+
+    .menu-content{
+
+        padding:20px;
+
+    }
+
+    .menu-grid{
+
+        gap:20px;
+
+    }
+
+    .menu-image{
+
+        height:200px;
+
+    }
+
+    .menu-image img{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+}
+========================================== */
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width:600px){
+
+    .menu-main{
+
+        flex-direction:column;
+
+    }
+
+    .menu-sidebar{
+
+        width:100%;
+
+        height:110px;
+
+        flex-direction:row;
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        overflow-y:hidden;
+
+        border-right:none;
+
+        border-bottom:1px solid #ECECEC;
+
+        padding:12px;
+
+    }
+
+    .menu-sidebar::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .category-item{
+
+        min-width:90px;
+
+        height:82px;
+
+        flex-shrink:0;
+
+    }
+
+    .menu-content{
+
+        padding:18px;
+
+    }
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.menu-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.menu-content::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.menu-content::-webkit-scrollbar-thumb{
+
+    background:#D8D8D8;
+
+    border-radius:999px;
+
+}
+
+.menu-content::-webkit-scrollbar-thumb:hover{
+
+    background:#BEBEBE;
+
+}
+
+/* ==========================================
+   IMAGE PLACEHOLDER
+========================================== */
+
+.menu-image{
+
+    overflow:hidden;
+
+}
+
+.menu-image img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+/* ==========================================
+   SMOOTH TRANSITION
+========================================== */
+
+.category-item,
+
+.menu-card,
+
+.menu-image img,
+
+.menu-price,
+
+.menu-info h3{
+
+    transition:.25s;
+
+}
+
+/* ==========================================
+   CROSS SELL
+========================================== */
+
+.crosssell-overlay{
+
+    position:absolute;
+    inset: 0;
+    width:100%;
+    height:100%;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    background:transparent;
+    pointer-events: none;
+    opacity:0;
+    transition:.25s ease;
+
+    z-index:9999;
+
+}
+
+.crosssell-overlay.show{
+
+    opacity:1;
+    pointer-events: none;
+
+}
+
+.crosssell-popup{
+    pointer-events: auto;
+    border:3px solid #1e5aa6;
+
+    width:74%;
+    margin-bottom: 16px;
+    background:#FFFFFF;
+
+    border-radius:28px;
+
+    padding:16px 20px 18px;
+
+    transform:translateY(100%);
+
+    transition:
+    transform .25s,
+    opacity .25s;
+
+    box-shadow:0 -10px 40px rgba(0,0,0,.15);
+
+}
+
+.crosssell-overlay.show .crosssell-popup{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   HANDLE
+========================================== */
+
+.crosssell-handle{
+
+    width:60px;
+
+    height:5px;
+
+    border-radius:999px;
+
+    background:#BFD3F3;
+
+    margin:0 auto 26px;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+.crosssell-body{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:center;
+    padding:0 14px;
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.crosssell-image{
+    flex:0 0 90px;
+
+    width:90px;
+
+    height:90px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-left:18px;
+}
+
+.crosssell-image img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.crosssell-content{
+    flex: 1;
+
+}
+
+.crosssell-content h2{
+
+    font-size:18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+
+    color:#1E5AA6;
+
+    line-height:1.2;
+text-align: left;
+}
+
+.crosssell-price{
+text-align: left;
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#1E5AA6;
+
+    margin-bottom:8px;
+
+}
+
+.crosssell-text{
+text-align: left;
+    font-size:13px;
+
+    line-height:1.5;
+
+    color:#666;
+
+}
+
+.crosssell-text b{
+
+    color:#222;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.crosssell-action{
+
+    margin-top:14px;
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.crosssell-action button{
+
+    flex:1;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+/* Tidak Terima Kasih */
+
+.btn-secondary{
+
+    background:#1E5AA6;
+
+    color:#FFFFFF;
+
+}
+
+.btn-secondary:hover{
+
+    background:#184A89;
+
+}
+
+/* Lihat Menu */
+
+.btn-primary{
+
+    background:#FFFFFF;
+
+    color:#1E5AA6;
+
+    border:2px solid #1E5AA6;
+
+}
+
+.btn-primary:hover{
+
+    background:#F5F8FC;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:800px){
+
+    .crosssell-overlay{
+
+        width:100%;
+
+    }
+
+    .crosssell-body{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .crosssell-image{
+
+        height:180px;
+
+    }
+
+    .crosssell-action{
+
+        flex-direction:column;
+
+    }
+
+}

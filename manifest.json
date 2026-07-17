@@ -1,0 +1,45 @@
+{
+    "id": "/",
+    "name": "Soulja Coffee AI Recommendation",
+    "short_name": "Soulja",
+
+    "description": "AI Recommendation System untuk Soulja Coffee.",
+
+    "start_url": "/",
+
+    "scope": "/",
+
+    "display": "standalone",
+
+    "orientation": "portrait",
+
+    "theme_color": "#16508B",
+
+    "background_color": "#F7F7F7",
+
+    "lang": "id",
+
+    "dir": "ltr",
+
+    "categories": [
+        "food",
+        "business",
+        "productivity"
+    ],
+
+    "icons": [
+
+        {
+            "src": "assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+    ]
+}

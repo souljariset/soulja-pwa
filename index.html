@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#1E5AA6">
+
+    <title>SOULJA Coffee | AI Recommendation</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+          href="assets/icons/icon-48.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/animation.css">
+
+    <link rel="stylesheet"
+          href="css/components.css">
+
+    <link rel="stylesheet"
+          href="css/pages/landing.css">
+
+
+      <link rel="manifest" href="manifest.json">
+
+            <meta name="theme-color" content="#16508B">
+
+            <link rel="apple-touch-icon"
+            href="assets/icons/icon-192.png">
+
+</head>
+
+<body>
+
+    <main class="container landing-page">
+
+        <!-- Logo -->
+        <img src="assets/mainbanner.png"
+             class="logo"
+             alt="SOULJA Coffee">
+
+        <!-- Hero -->
+        <div class="hero-wrapper">
+
+            <img src="assets/cangkir.png"
+                 class="hero"
+                 alt="Coffee">
+
+            <div class="hero-shadow"></div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="button-group">
+
+            <a href="input.html"
+               class="btn btn-primary">
+
+                Lihat Rekomendasi AI untukmu
+
+            </a>
+
+            <a href="menu.html"
+               class="btn btn-outline">
+
+                Jelajahi Semua Menu
+
+            </a>
+
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+
+            Membantu personalisasi menu dan preferensi rasa Anda secara otomatis.
+
+        </p>
+
+    </main>
+
+    <!-- JavaScript -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/pages/landing.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", async () => {
+        try {
+
+            const registration =
+                await navigator.serviceWorker.register("./sw.js");
+
+            console.log("Service Worker Registered", registration);
+
+        } catch (error) {
+
+            console.error("Service Worker Error:", error);
+
+        }
+    });
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#1E5AA6">
+
+    <title>SOULJA Coffee | AI Recommendation</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/input.css">
+
+
+    <link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#16508B">
+
+<link rel="apple-touch-icon"
+      href="assets/icons/icon-192.png">
+
+</head>
+
+<!-- ======================================
+LOADING OVERLAY
+====================================== -->
+
+<div id="loadingOverlay" class="loading-overlay hidden">
+
+    <div class="loading-box">
+
+        <img
+            src="assets/logo.png"
+            class="loading-logo"
+            alt="Soulja">
+
+        <h2>Mempersonalisasi rekomendasi...</h2>
+
+        <p>
+            AI sedang memilih menu terbaik
+            untukmu
+        </p>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+<main id="inputPage" class="container input-page">
+        <!-- ======================================
+         HEADER
+    ======================================= -->
+
+    <header class="topbar">
+
+        <div class="circle-icon">
+            <a href="index.html">
+                <img src="assets/arahkiri.svg"
+                     alt="back">
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- ===================================== -->
+    <!-- LOGO -->
+    <!-- ===================================== -->
+
+    <img src="assets/logo.png"
+         class="logo"
+         alt="SOULJA Coffee">
+
+    <!-- ===================================== -->
+    <!-- SECTION : IDENTITAS -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <div class="circle-icon">
+
+                <img src="assets/nama.svg"
+                     alt="Profile">
+
+            </div>
+
+            <div>
+
+                <h2>Siapa nama kamu?</h2>
+
+                <p>
+                    Bantu kami mengenalmu agar rekomendasi menu menjadi lebih personal.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="identity-layout">
+
+    <!-- ========================= -->
+    <!-- NAMA -->
+    <!-- ========================= -->
+
+    <div class="identity-left">
+
+        <label
+            class="field-label"
+            for="customerName">
+
+            Nama
+
+        </label>
+
+        <input
+            id="customerName"
+            class="textbox"
+            type="text"
+            placeholder="Masukkan nama kamu"
+            maxlength="40"
+            autocomplete="off"
+            aria-label="Nama pelanggan"
+            required>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- GENDER -->
+    <!-- ========================= -->
+
+    <div class="identity-right">
+
+        
+
+        <div
+            id="genderGroup"
+            class="option-grid gender-grid">
+
+            <div
+                class="option-card active"
+                data-value="male">
+
+                <img
+                    src="assets/Pria.svg"
+                    alt="Pria">
+
+                <span>Pria</span>
+
+            </div>
+
+            <div
+                class="option-card"
+                data-value="female">
+
+                <img
+                    src="assets/Wanita.svg"
+                    alt="Wanita">
+
+                <span>Wanita</span>
+
+            </div>
+
+            <div
+                class="option-card"
+                data-value="group">
+
+                <img
+                    src="assets/Bersama.svg"
+                    alt="Bersama">
+
+                <span>Bersama</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+     <!-- ===================================== -->
+    <!-- SECTION : PILIHAN MENU -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <div class="circle-icon">
+
+                <img src="assets/makanan1.svg"
+                     alt="Menu">
+
+            </div>
+
+            <div>
+
+                <h2>Apa yang ingin kamu nikmati hari ini?</h2>
+
+                <p>
+                    Pilih jenis menu yang ingin direkomendasikan.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="menuType"
+             class="option-grid">
+
+            <!-- Minuman -->
+
+            <div class="option-card active"
+                 data-value="drink">
+
+                <img src="assets/Minuman.svg"
+                     alt="Minuman">
+
+                <span>Minuman</span>
+
+            </div>
+
+            <!-- Makanan -->
+
+            <div class="option-card"
+                 data-value="food">
+
+                <img src="assets/Makanan.svg"
+                     alt="Makanan">
+
+                <span>Makanan</span>
+
+            </div>
+
+            <!-- Keduanya -->
+
+            <div class="option-card"
+                 data-value="both">
+
+                <img src="assets/Keduanya.svg"
+                     alt="Keduanya">
+
+                <span>Keduanya</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- SECTION : MOOD -->
+    <!-- ===================================== -->
+
+    <section class="section">
+        <div class="section-title">
+            <div class="circle-icon">
+                <img src="assets/mood.svg"
+                alt="Mood">
+            </div>
+            <div>
+                <h2>Bagaimana suasana hatimu hari ini?</h2>
+                <p>Mood akan membantu AI memberikan rekomendasi yang lebih sesuai.</p>
+            </div>
+        </div>
+
+        <div id="moodGroup"
+            class="mood-grid">
+            <div class="option-card active"
+                data-value="bersemangat">
+                <img
+                src="assets/Bersemangat.svg"
+                alt="Bersemangat">
+                <span>Semangat</span>
+            </div>
+
+            <div class="option-card"
+                data-value="fokus">
+                <img
+                src="assets/Fokus.svg"
+                alt="Fokus">
+                <span>Fokus</span>
+            </div>
+
+            <div class="option-card"
+                data-value="santai">
+                <img
+                src="assets/Santai.svg"
+                alt="Santai">
+                <span>Santai</span>
+            </div>
+
+            <div class="option-card"
+                data-value="rileks">
+                <img
+                src="assets/Rileks.svg"
+                alt="Rileks">
+                <span>Rileks</span>
+            </div>
+
+            <div class="option-card"
+                data-value="sedih">
+                <img
+                src="assets/Sedih.svg"
+                alt="Sedih">
+                <span>Sedih</span>
+            </div>
+        </div>
+    </section>
+    
+        <!-- ===================================== -->
+    <!-- SECTION : PREFERENSI RASA -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <div class="circle-icon">
+
+                <img src="assets/rasa.svg"
+                     alt="Preference">
+
+            </div>
+
+            <div>
+
+                <h2>Preferensi rasa favoritmu</h2>
+
+                <p>
+                    Kamu boleh memilih lebih dari satu preferensi rasa.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ============================= -->
+        <!-- PREFERENSI MINUMAN -->
+        <!-- ============================= -->
+
+        <div class="preference-group">
+
+            <h3 class="preference-title">
+                Preferensi Minuman
+            </h3>
+
+            <div id="drinkPreference"
+                 class="chip-container">
+
+                <div class="chip" data-value="bold">
+
+                    <img src="assets/Bold.svg"
+                         alt="Bold">
+
+                    <span>Bold</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="sweet">
+
+                    <img src="assets/Sweet.svg"
+                         alt="Sweet">
+
+                    <span>Sweet</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="creamy">
+
+                    <img src="assets/Creamy.svg"
+                         alt="Creamy">
+
+                    <span>Creamy</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="fresh">
+
+                    <img src="assets/Fresh.svg"
+                         alt="Fresh">
+
+                    <span>Fresh</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="sour">
+
+                    <img src="assets/sour.png"
+                         alt="Sour">
+
+                    <span>Sour</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="salty">
+
+                    <img src="assets/Salty.svg"
+                         alt="Salty">
+
+                    <span>Salty</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="earthy">
+
+                    <img src="assets/Earthy.svg"
+                         alt="earthy">
+
+                    <span>earthy</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- PREFERENSI MAKANAN -->
+        <!-- ============================= -->
+
+        <div class="preference-group">
+
+            <h3 class="preference-title">
+                Preferensi Makanan
+            </h3>
+
+            <div id="foodPreference"
+                 class="chip-container">
+
+                <!--<div class="chip"
+                     data-value="savory">
+
+                    <img src="assets/savory.png"
+                         alt="Savory">
+
+                    <span>Savory</span>
+
+                </div>-->
+
+                <div class="chip"
+                     data-value="sweet">
+
+                    <img src="assets/Sweet.svg"
+                         alt="Sweet">
+
+                    <span>Sweet</span>
+
+                </div>
+
+                <!--<div class="chip"
+                     data-value="crunchy">
+
+                    <img src="assets/crunchy.png"
+                         alt="Crunchy">
+
+                    <span>Crunchy</span>
+
+                </div>-->
+
+                <div class="chip"
+                     data-value="soft">
+
+                    <img src="assets/Soft.svg"
+                         alt="Soft">
+
+                    <span>Soft</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="chocolate">
+
+                    <img src="assets/Chocolate.svg"
+                         alt="Chocolate">
+
+                    <span>Chocolate</span>
+
+                </div>
+
+                <div class="chip"
+                     data-value="sour">
+
+                    <img src="assets/sour.png"
+                         alt="Sour">
+
+                    <span>Sour</span>
+
+                </div>
+
+                <!--<div class="chip"
+                     data-value="rice-bowl">
+
+                    <img src="assets/ricebowl.png"
+                         alt="Rice Bowl">
+
+                    <span>Rice Bowl</span>-->
+
+                    <div class="chip"
+                     data-value="creamy">
+
+                    <img src="assets/Creamy.svg"
+                         alt="Creamy">
+
+                    <span>Creamy</span>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ===================================== -->
+    <!-- ACTION BUTTON -->
+    <!-- ===================================== -->
+
+    <div class="button-submit">
+
+        <button
+            id="recommendBtn"
+            class="btn btn-primary"
+            type="button"
+            aria-label="Lihat rekomendasi menu">
+
+            <span>
+
+                Lihat Rekomendasi Menu
+
+            </span>
+
+            <img
+                src="assets/arrow.png"
+                class="btn-icon"
+                alt="Next">
+
+        </button>
+
+    </div>
+
+</main>
+
+<!-- ===================================== -->
+<!-- JAVASCRIPT -->
+<!-- ===================================== -->
+
+<script src="js/app.js"></script>
+
+<script src="js/components.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/pages/input.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", async () => {
+        try {
+
+            const registration =
+                await navigator.serviceWorker.register("./sw.js");
+
+            console.log("Service Worker Registered", registration);
+
+        } catch (error) {
+
+            console.error("Service Worker Error:", error);
+
+        }
+    });
+}
+</script>
+
+</body>
+
+</html>

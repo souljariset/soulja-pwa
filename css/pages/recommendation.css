@@ -1,0 +1,800 @@
+/* ==========================================
+   RECOMMENDATION PAGE
+========================================== */
+
+.recommendation-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:48px;
+
+    background:#F7F7F7;
+
+    min-height:1280px;
+
+}
+
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+}
+
+.back-button{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#155295;
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+    transition:.25s;
+
+}
+
+.back-button:hover{
+
+    transform:translateX(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    width:230px;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.title-section{
+
+    width:100%;
+
+    text-align:center;
+
+    margin-bottom:32px;
+
+}
+
+.title-section h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+#welcomeText{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+    margin-bottom:12px;
+
+}
+
+.subtitle{
+
+    display:block;
+
+    width:600px;
+
+    max-width:100%;
+
+    margin:0 auto;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================
+   PREFERENCE
+========================================== */
+
+.preference-row{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-bottom:40px;
+
+}
+
+.preference-chip{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:14px 24px;
+
+    background:#FFFFFF;
+
+    border:2px solid var(--primary);
+
+    border-radius:999px;
+
+    color:var(--primary);
+
+    font-size:17px;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s;
+
+}
+
+.preference-chip:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-md);
+
+}
+/* ==========================================
+   RECOMMENDATION LIST
+========================================== */
+
+.recommendation-list{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+    margin-bottom:34px;
+
+    align-items:stretch;
+
+}
+
+/* ==========================================
+   RECOMMENDATION CARD
+========================================== */
+
+.recommendation-card{
+
+    width:100%;
+
+    height:520px;
+
+    background:#FFFFFF;
+
+    border-radius:36px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 26px rgba(0,0,0,.08);
+
+    transition:.30s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.recommendation-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 36px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.recommendation-image{
+
+    width:100%;
+
+    height:250px;
+
+    background:#F8F8F8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.recommendation-image img{
+
+    width:240px;
+
+    height:240px;
+
+    object-fit:contain;
+
+    transition:.30s;
+
+}
+
+.recommendation-card:hover .recommendation-image img{
+
+    transform:scale(1.06);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.recommendation-content{
+
+    flex:1;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================
+   TOP INFO
+========================================== */
+
+.recommendation-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.recommendation-label{
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.recommendation-label.secondary{
+
+    background:#EDF4FF;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   SCORE
+========================================== */
+
+.recommendation-score{
+
+    color:#16A34A;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   MENU NAME
+========================================== */
+
+.recommendation-content h2{
+
+    font-size:24px;
+
+    line-height:1.3;
+
+    margin-bottom:6px;
+
+}
+
+/* ==========================================
+   CATEGORY
+========================================== */
+
+.menu-category{
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.menu-price{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.menu-description{
+
+    margin-top:auto;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    color:#666;
+
+}
+/* ==========================================
+   RECOMMENDATION NOTE
+========================================== */
+
+.recommendation-note{
+
+    width:100%;
+
+    margin-bottom:40px;
+
+}
+
+.note-box{
+
+    background:#EDF5FF;
+
+    border-left:6px solid var(--primary);
+
+    border-radius:20px;
+
+    padding:20px 28px;
+
+}
+
+.note-box h3{
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.note-box p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   ACTION
+========================================== */
+
+.recommendation-action{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:auto;
+
+}
+
+.recommendation-action .btn{
+
+    height:84px;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    border-radius:999px;
+
+}
+
+/* Primary Button */
+
+.recommendation-action .btn-primary{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* Outline Button */
+
+.recommendation-action .btn-outline{
+
+    background:#FFFFFF;
+
+}
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+.recommendation-action .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.recommendation-action .btn:active{
+
+    transform:scale(.98);
+
+}
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.recommendation-card{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:fadeUp .6s ease forwards;
+
+}
+
+.recommendation-card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.note-box{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    animation:fadeUp .7s ease forwards;
+
+    animation-delay:.3s;
+
+}
+
+.recommendation-action{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    animation:fadeUp .8s ease forwards;
+
+    animation-delay:.45s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   IMAGE ANIMATION
+========================================== */
+
+.recommendation-image img{
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+
+}
+
+.recommendation-card:hover .recommendation-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   PAGE SPACING
+========================================== */
+
+.recommendation-list+
+
+.recommendation-note{
+
+    margin-top:8px;
+
+}
+
+.recommendation-note+
+
+.recommendation-action{
+
+    margin-top:8px;
+
+}
+
+/* ==========================================
+   TABLET (800x1280)
+========================================== */
+
+/*@media screen and (max-width:900px){
+
+    .recommendation-page{
+
+        padding:36px;
+
+    }
+
+    .logo{
+
+        width:200px;
+
+    }
+
+    .title-section h1{
+
+        font-size:38px;
+
+    }
+
+    #welcomeText{
+
+        font-size:24px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    .recommendation-image{
+
+        height:300px;
+
+    }
+
+    .recommendation-image img{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .recommendation-content{
+
+        padding:28px;
+
+    }
+
+    .recommendation-content h2{
+
+        font-size:30px;
+
+    }
+
+    .menu-price{
+
+        font-size:28px;
+
+    }
+
+}*/
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width:600px){
+
+    .recommendation-page{
+
+        padding:24px;
+
+    }
+
+    .logo{
+
+        width:170px;
+
+    }
+
+    .preference-row{
+
+        justify-content:flex-start;
+
+    }
+
+    .preference-chip{
+
+        font-size:15px;
+
+    }
+
+    .recommendation-image{
+
+        height:240px;
+
+    }
+
+    .recommendation-image img{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .recommendation-content{
+
+        padding:22px;
+
+    }
+
+    .recommendation-content h2{
+
+        font-size:20px;
+
+    }
+
+    .menu-category{
+
+        font-size:13px;
+
+    }
+
+    .menu-price{
+
+        font-size:18px;
+
+    }
+
+    .menu-description{
+
+        font-size:13px;
+
+    }
+
+    .note-box{
+
+        padding:24px;
+
+    }
+
+    .note-box h3{
+
+        font-size:22px;
+
+    }
+
+    .note-box p{
+
+        font-size:16px;
+
+    }
+
+    .recommendation-action .btn{
+
+        height:72px;
+
+        font-size:22px;
+
+    }
+
+}

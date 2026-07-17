@@ -1,0 +1,559 @@
+/* ==========================================
+   INPUT PAGE
+========================================== */
+
+.input-page{
+
+    padding:32px 80px 40px;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    width:220px;
+
+    margin:0 auto 28px;
+
+    animation:fadeLogo .8s ease forwards;
+
+}
+
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+}
+
+.back-button{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#155295;
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+    transition:.25s;
+
+}
+
+.back-button:hover{
+
+    transform:translateX(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section{
+
+    width:100%;
+
+    border-top:2px solid #9f9f9f;
+
+    padding-top:18px;
+
+    margin-bottom:28px;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    font-size:19px;
+
+    margin-bottom:2px;
+
+}
+
+.section-title p{
+
+    font-size:14px;
+
+    color:#444;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.identity-layout{
+
+    display:grid;
+
+    grid-template-columns: 1fr 310px;
+
+    gap:34px;
+
+    align-items:start;
+
+}
+
+.field-label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.textbox{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   GENDER
+========================================== */
+
+.gender-group{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:14px;
+
+}
+
+.gender-card{
+
+    width:90px;
+
+}
+
+.gender-card img{
+
+    width:82px;
+
+    height:82px;
+
+}
+
+.gender-card span{
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   MENU TYPE
+========================================== */
+
+.option-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+}
+
+.option-card{
+
+    height:122px;
+
+}
+
+.option-card img{
+
+    width:52px;
+    transition:.25s;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(28%)
+        sepia(65%)
+        saturate(1360%)
+        hue-rotate(183deg)
+        brightness(90%)
+        contrast(96%);
+
+}
+
+.option-card.active img{
+
+    filter:none;
+
+}
+
+.option-card span{
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   MOOD
+========================================== */
+
+.mood-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:12px;
+
+}
+
+.mood-card{
+
+    height:118px;
+
+}
+
+.mood-card img{
+
+    width:54px;
+
+}
+
+.mood-card span{
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   PREFERENCE
+========================================== */
+
+.preference-group{
+
+    margin-bottom:18px;
+
+}
+
+.preference-title{
+
+    font-size:18px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.chip-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.chip{
+
+    height:34px;
+
+    padding:0 12px;
+
+    font-size:12px;
+
+}
+
+.chip img{
+
+    width:16px;
+
+    height:16px;
+        transition:.25s;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(28%)
+        sepia(65%)
+        saturate(1360%)
+        hue-rotate(183deg)
+        brightness(90%)
+        contrast(96%);
+
+}
+.chip.active img{
+
+    filter:none;
+
+}
+/* ==========================================
+   BUTTON
+========================================== */
+
+.button-submit{
+
+    margin-top:30px;
+
+}
+
+.button-submit .btn{
+
+    height:70px;
+
+    font-size:22px;
+
+    padding:0 30px;
+
+}
+
+.btn-icon{
+
+    width:26px;
+
+}
+
+/* ==========================================
+   SPACE
+========================================== */
+
+.preference-group:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ==========================================
+   INPUT PAGE CUSTOM
+========================================== */
+
+.identity-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 320px;
+
+    gap:36px;
+
+    align-items:start;
+
+}
+
+.gender-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+}
+
+.gender-grid .option-card{
+
+    min-height:120px;
+
+}
+
+.mood-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:16px;
+
+}
+
+.mood-grid .option-card{
+
+    min-height:125px;
+
+}
+
+.preference-title{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.loading-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.loading-box{
+
+    width:420px;
+
+    text-align:center;
+
+}
+
+.loading-logo{
+
+    width:140px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    animation:pulse 1.2s infinite;
+
+}
+
+.loading-box h2{
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.loading-box p{
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+.loading-bar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#E5E5E5;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.loading-progress{
+
+    width:0;
+
+    height:100%;
+
+    background:var(--primary);
+
+    animation:loadingBar 1.2s linear forwards;
+
+}
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}

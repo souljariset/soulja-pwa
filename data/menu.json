@@ -1,0 +1,2774 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "type": "drink",
+    "category": {
+      "id": "black-coffee",
+      "name": "Black Coffee"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "minuman",
+      "file": "longblack.png",
+      "alt": "Espresso"
+    },
+    "description": "Kopi murni dengan rasa paling kuat, pekat, dan tanpa tambahan susu.",
+    "taste": {
+      "bold": 5,
+      "sweet": 1,
+      "creamy": 1,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "espresso",
+    "aiVector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "focused",
+      "name": "fokus",
+      "score": 3
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "black-coffee",
+      "bold",
+      "drink"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Butter Croissant",
+    "type": "food",
+    "category": {
+      "id": "pastry",
+      "name": "Pastry"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Butter Croissant"
+    },
+    "description": "Pastry berlapis dengan aroma butter yang harum dan tekstur renyah.",
+    "taste": {
+      "sweet": 2,
+      "savory": 2,
+      "crunchy": 4,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "butter-croissant",
+    "aiVector": [
+      2,
+      2,
+      4,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "crunchy",
+      "food",
+      "pastry"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Long Black",
+    "type": "drink",
+    "category": {
+      "id": "black-coffee",
+      "name": "Black Coffee"
+    },
+    "price": 20000,
+    "image": {
+      "folder": "minuman",
+      "file": "longblack.png",
+      "alt": "Long Black"
+    },
+    "description": "Espresso yang dipadukan dengan air panas sehingga lebih ringan namun tetap bold.",
+    "taste": {
+      "bold": 5,
+      "sweet": 1,
+      "creamy": 1,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "long-black",
+    "aiVector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "focused",
+      "name": "fokus",
+      "score": 3
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "black-coffee",
+      "bold",
+      "drink"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Pain Au Chocolate",
+    "type": "food",
+    "category": {
+      "id": "pastry",
+      "name": "Pastry"
+    },
+    "price": 28000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Pain Au Chocolate"
+    },
+    "description": "Croissant berisi cokelat dengan perpaduan rasa manis dan tekstur flaky.",
+    "taste": {
+      "sweet": 4,
+      "savory": 2,
+      "crunchy": 4,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 5,
+      "rice_bowl": 1
+    },
+    "slug": "pain-au-chocolate",
+    "aiVector": [
+      4,
+      2,
+      4,
+      1,
+      3,
+      5,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "chocolate",
+      "crunchy",
+      "food",
+      "pastry",
+      "sweet"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Coffee Lemon",
+    "type": "drink",
+    "category": {
+      "id": "black-coffee",
+      "name": "Black Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "longblack.png",
+      "alt": "Coffee Lemon"
+    },
+    "description": "Perpaduan kopi dan lemon yang memberikan sensasi segar, asam, dan unik.",
+    "taste": {
+      "bold": 4,
+      "sweet": 2,
+      "creamy": 1,
+      "sour": 5,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "coffee-lemon",
+    "aiVector": [
+      4,
+      2,
+      1,
+      5,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "black-coffee",
+      "bold",
+      "drink",
+      "sour"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Cranberry Cream Cheese",
+    "type": "food",
+    "category": {
+      "id": "soft-sourdough",
+      "name": "Soft Sourdough"
+    },
+    "price": 28000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Cranberry Cream Cheese"
+    },
+    "description": "Soft sourdough dengan isian cream cheese dan sentuhan cranberry yang sedikit asam.",
+    "taste": {
+      "sweet": 2,
+      "savory": 2,
+      "crunchy": 2,
+      "sour": 3,
+      "soft": 4,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "cranberry-cream-cheese",
+    "aiVector": [
+      2,
+      2,
+      2,
+      3,
+      4,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "food",
+      "soft",
+      "soft-sourdough"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mistic Jasmine",
+    "type": "drink",
+    "category": {
+      "id": "black-coffee",
+      "name": "Black Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "longblack.png",
+      "alt": "Mistic Jasmine"
+    },
+    "description": "Black coffee dengan sentuhan aroma jasmine yang ringan dan menyegarkan.",
+    "taste": {
+      "bold": 3,
+      "sweet": 2,
+      "creamy": 1,
+      "sour": 4,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "mistic-jasmine",
+    "aiVector": [
+      3,
+      2,
+      1,
+      4,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "black-coffee",
+      "drink",
+      "sour"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Smoke Beef & Cheese",
+    "type": "food",
+    "category": {
+      "id": "soft-sourdough",
+      "name": "Soft Sourdough"
+    },
+    "price": 28000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Smoke Beef & Cheese"
+    },
+    "description": "Soft sourdough gurih dengan isian smoked beef dan keju yang melimpah.",
+    "taste": {
+      "sweet": 1,
+      "savory": 5,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 4,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "smoke-beef-and-cheese",
+    "aiVector": [
+      1,
+      5,
+      2,
+      1,
+      4,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "focused",
+      "name": "fokus",
+      "score": 3
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "food",
+      "savory",
+      "soft",
+      "soft-sourdough"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Cappuccino",
+    "type": "drink",
+    "category": {
+      "id": "milk-based-coffee",
+      "name": "Milk Based Coffee"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Cappuccino"
+    },
+    "description": "Kopi susu klasik dengan foam lembut dan rasa kopi yang masih cukup terasa.",
+    "taste": {
+      "bold": 4,
+      "sweet": 2,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 2
+    },
+    "slug": "cappuccino",
+    "aiVector": [
+      4,
+      2,
+      4,
+      1,
+      1,
+      2
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "bold",
+      "creamy",
+      "drink",
+      "milk-based-coffee"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Original Cheesecake",
+    "type": "food",
+    "category": {
+      "id": "dessert",
+      "name": "Dessert"
+    },
+    "price": 30000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Original Cheesecake"
+    },
+    "description": "Cheesecake lembut dengan rasa keju yang creamy dan autentik.",
+    "taste": {
+      "sweet": 4,
+      "savory": 1,
+      "crunchy": 1,
+      "sour": 1,
+      "soft": 5,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "original-cheesecake",
+    "aiVector": [
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "dessert",
+      "food",
+      "soft",
+      "sweet"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Piccolo",
+    "type": "drink",
+    "category": {
+      "id": "milk-based-coffee",
+      "name": "Milk Based Coffee"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Piccolo"
+    },
+    "description": "Kopi susu dengan porsi kecil, lebih kuat dibanding latte namun tetap creamy.",
+    "taste": {
+      "bold": 5,
+      "sweet": 1,
+      "creamy": 2,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 2
+    },
+    "slug": "piccolo",
+    "aiVector": [
+      5,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "badges": [],
+    "mood": {
+      "id": "focused",
+      "name": "fokus",
+      "score": 3
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "bold",
+      "drink",
+      "milk-based-coffee"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Original Matcha Cheesecake",
+    "type": "food",
+    "category": {
+      "id": "dessert",
+      "name": "Dessert"
+    },
+    "price": 32000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Original Matcha Cheesecake"
+    },
+    "description": "Cheesecake creamy dengan sentuhan matcha yang lembut dan menenangkan.",
+    "taste": {
+      "sweet": 3,
+      "savory": 1,
+      "crunchy": 1,
+      "sour": 1,
+      "soft": 5,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "original-matcha-cheesecake",
+    "aiVector": [
+      3,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "dessert",
+      "food",
+      "soft"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Magic",
+    "type": "drink",
+    "category": {
+      "id": "milk-based-coffee",
+      "name": "Milk Based Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Magic"
+    },
+    "description": "Kopi susu creamy dengan keseimbangan rasa kopi dan susu yang pas.",
+    "taste": {
+      "bold": 4,
+      "sweet": 3,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 2
+    },
+    "slug": "magic",
+    "aiVector": [
+      4,
+      3,
+      4,
+      1,
+      1,
+      2
+    ],
+    "badges": [],
+    "mood": {
+      "id": "focused",
+      "name": "fokus",
+      "score": 3
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "bold",
+      "creamy",
+      "drink",
+      "milk-based-coffee"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Croffle",
+    "type": "food",
+    "category": {
+      "id": "dessert",
+      "name": "Dessert"
+    },
+    "price": 28000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Croffle"
+    },
+    "description": "Perpaduan croissant dan waffle dengan tekstur renyah di luar dan lembut di dalam.",
+    "taste": {
+      "sweet": 4,
+      "savory": 1,
+      "crunchy": 4,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "croffle",
+    "aiVector": [
+      4,
+      1,
+      4,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "crunchy",
+      "dessert",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Cafe Latte",
+    "type": "drink",
+    "category": {
+      "id": "milk-based-coffee",
+      "name": "Milk Based Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Cafe Latte"
+    },
+    "description": "Kopi susu lembut dengan karakter creamy yang cocok untuk dinikmati santai.",
+    "taste": {
+      "bold": 3,
+      "sweet": 2,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "cafe-latte",
+    "aiVector": [
+      3,
+      2,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "milk-based-coffee"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Brownies",
+    "type": "food",
+    "category": {
+      "id": "dessert",
+      "name": "Dessert"
+    },
+    "price": 12000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Brownies"
+    },
+    "description": "Kue cokelat padat dengan rasa manis dan cokelat yang kaya.",
+    "taste": {
+      "sweet": 4,
+      "savory": 1,
+      "crunchy": 1,
+      "sour": 1,
+      "soft": 4,
+      "chocolate": 5,
+      "rice_bowl": 1
+    },
+    "slug": "brownies",
+    "aiVector": [
+      4,
+      1,
+      1,
+      1,
+      4,
+      5,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "happy",
+      "name": "happy",
+      "score": 5
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "chocolate",
+      "dessert",
+      "food",
+      "soft",
+      "sweet"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Soulful",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Soulful"
+    },
+    "description": "Signature es kopi susu Soulja dengan rasa manis, creamy, dan mudah dinikmati semua kalangan.",
+    "taste": {
+      "bold": 3,
+      "sweet": 4,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "soulful",
+    "aiVector": [
+      3,
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Broim (Brownies Ice Cream)",
+    "type": "food",
+    "category": {
+      "id": "dessert",
+      "name": "Dessert"
+    },
+    "price": 18000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Broim (Brownies Ice Cream)"
+    },
+    "description": "Brownies hangat yang dipadukan dengan es krim lembut dan creamy.",
+    "taste": {
+      "sweet": 5,
+      "savory": 1,
+      "crunchy": 1,
+      "sour": 1,
+      "soft": 5,
+      "chocolate": 5,
+      "rice_bowl": 1
+    },
+    "slug": "broim-brownies-ice-cream",
+    "aiVector": [
+      5,
+      1,
+      1,
+      1,
+      5,
+      5,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "happy",
+      "name": "happy",
+      "score": 5
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "chocolate",
+      "dessert",
+      "food",
+      "soft",
+      "sweet"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Butterscotch",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Butterscotch"
+    },
+    "description": "Es kopi susu dengan rasa karamel butterscotch yang manis dan creamy.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "butterscotch",
+    "aiVector": [
+      2,
+      5,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "French Fries",
+    "type": "food",
+    "category": {
+      "id": "snack",
+      "name": "Snack"
+    },
+    "price": 18000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "French Fries"
+    },
+    "description": "Kentang goreng renyah dengan rasa gurih yang cocok untuk sharing.",
+    "taste": {
+      "sweet": 1,
+      "savory": 5,
+      "crunchy": 5,
+      "sour": 1,
+      "soft": 1,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "french-fries",
+    "aiVector": [
+      1,
+      5,
+      5,
+      1,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "crunchy",
+      "food",
+      "savory",
+      "snack"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Sea Salted",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Sea Salted"
+    },
+    "description": "Es kopi susu creamy dengan sentuhan rasa asin gurih yang unik.",
+    "taste": {
+      "bold": 3,
+      "sweet": 4,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 5,
+      "nutty": 1
+    },
+    "slug": "sea-salted",
+    "aiVector": [
+      3,
+      4,
+      5,
+      1,
+      5,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "salty",
+      "sweet"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Classic Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Classic Soft Cookies"
+    },
+    "description": "Soft cookies klasik dengan tekstur lembut dan rasa manis yang pas.",
+    "taste": {
+      "sweet": 4,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "classic-soft-cookies",
+    "aiVector": [
+      4,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "cookies",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Sweet Poppin Crunch",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Sweet Poppin Crunch"
+    },
+    "description": "Es kopi susu manis dengan sensasi rasa yang fun dan cocok untuk pencinta minuman dessert.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "sweet-poppin-crunch",
+    "aiVector": [
+      2,
+      5,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Red Velvet Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Red Velvet Soft Cookies"
+    },
+    "description": "Soft cookies red velvet dengan rasa manis dan tekstur chewy.",
+    "taste": {
+      "sweet": 4,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "red-velvet-soft-cookies",
+    "aiVector": [
+      4,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "cookies",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Aromatic",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Aromatic"
+    },
+    "description": "Es kopi susu dengan aroma khas yang lebih kompleks dan elegan.",
+    "taste": {
+      "bold": 3,
+      "sweet": 3,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 2
+    },
+    "slug": "aromatic",
+    "aiVector": [
+      3,
+      3,
+      4,
+      1,
+      1,
+      2
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Monster Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Monster Soft Cookies"
+    },
+    "description": "Soft cookies berukuran besar dengan rasa manis yang lebih intens.",
+    "taste": {
+      "sweet": 5,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 3,
+      "rice_bowl": 1
+    },
+    "slug": "monster-soft-cookies",
+    "aiVector": [
+      5,
+      1,
+      2,
+      1,
+      3,
+      3,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "cookies",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Candy Rush",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Candy Rush"
+    },
+    "description": "Minuman manis dengan cita rasa candy yang playful dan menyegarkan.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "candy-rush",
+    "aiVector": [
+      2,
+      5,
+      4,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Matchamond Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Matchamond Soft Cookies"
+    },
+    "description": "Soft cookies matcha dengan tambahan almond dan aroma khas teh hijau.",
+    "taste": {
+      "sweet": 3,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "matchamond-soft-cookies",
+    "aiVector": [
+      3,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "cookies",
+      "food"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Biscoff",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Biscoff"
+    },
+    "description": "Es kopi susu creamy dengan rasa khas biskuit caramelized Biscoff.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 3
+    },
+    "slug": "biscoff",
+    "aiVector": [
+      2,
+      5,
+      5,
+      1,
+      1,
+      3
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Biscoff Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Biscoff Soft Cookies"
+    },
+    "description": "Soft cookies dengan rasa khas biskuit karamel Biscoff yang manis.",
+    "taste": {
+      "sweet": 5,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 1,
+      "rice_bowl": 1
+    },
+    "slug": "biscoff-soft-cookies",
+    "aiVector": [
+      5,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "cookies",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Toasted Almond",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Toasted Almond"
+    },
+    "description": "Es kopi susu dengan aroma dan rasa almond panggang yang hangat dan nutty.",
+    "taste": {
+      "bold": 3,
+      "sweet": 4,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 5
+    },
+    "slug": "toasted-almond",
+    "aiVector": [
+      3,
+      4,
+      4,
+      1,
+      1,
+      5
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "nutty",
+      "sweet"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Double Choco Soft Cookies",
+    "type": "food",
+    "category": {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    "price": 15000,
+    "image": {
+      "folder": "makanan",
+      "file": "croissant.png",
+      "alt": "Double Choco Soft Cookies"
+    },
+    "description": "Soft cookies dengan sensasi cokelat ganda yang kaya dan lumer.",
+    "taste": {
+      "sweet": 5,
+      "savory": 1,
+      "crunchy": 2,
+      "sour": 1,
+      "soft": 3,
+      "chocolate": 5,
+      "rice_bowl": 1
+    },
+    "slug": "double-choco-soft-cookies",
+    "aiVector": [
+      5,
+      1,
+      2,
+      1,
+      3,
+      5,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "chocolate",
+      "cookies",
+      "food",
+      "sweet"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Tiramisu",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Tiramisu"
+    },
+    "description": "Es kopi susu dengan karakter dessert tiramisu yang creamy dan manis.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 2
+    },
+    "slug": "tiramisu",
+    "aiVector": [
+      2,
+      5,
+      5,
+      1,
+      1,
+      2
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Shortbread Cookies",
+    "type": "drink",
+    "category": {
+      "id": "es-kopi-susu",
+      "name": "Es Kopi Susu"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Shortbread Cookies"
+    },
+    "description": "Es kopi susu dengan sentuhan rasa butter cookies yang lembut dan manis.",
+    "taste": {
+      "bold": 2,
+      "sweet": 5,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 3
+    },
+    "slug": "shortbread-cookies",
+    "aiVector": [
+      2,
+      5,
+      4,
+      1,
+      1,
+      3
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "es-kopi-susu",
+      "sweet"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Matcha",
+    "type": "drink",
+    "category": {
+      "id": "non-coffee",
+      "name": "Non Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Matcha"
+    },
+    "description": "Minuman teh hijau Jepang dengan rasa earthy, creamy, dan menenangkan.",
+    "taste": {
+      "bold": 2,
+      "sweet": 3,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "matcha",
+    "aiVector": [
+      2,
+      3,
+      4,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "non-coffee"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Chocolate",
+    "type": "drink",
+    "category": {
+      "id": "non-coffee",
+      "name": "Non Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Chocolate"
+    },
+    "description": "Minuman cokelat creamy yang manis dan cocok sebagai comfort drink.",
+    "taste": {
+      "bold": 1,
+      "sweet": 4,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "chocolate",
+    "aiVector": [
+      1,
+      4,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "happy",
+      "name": "happy",
+      "score": 5
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "non-coffee",
+      "sweet"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Red Velvet",
+    "type": "drink",
+    "category": {
+      "id": "non-coffee",
+      "name": "Non Coffee"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Red Velvet"
+    },
+    "description": "Minuman creamy dengan rasa khas red velvet yang manis dan lembut.",
+    "taste": {
+      "bold": 1,
+      "sweet": 4,
+      "creamy": 4,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "red-velvet",
+    "aiVector": [
+      1,
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "non-coffee",
+      "sweet"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Candy Berry",
+    "type": "drink",
+    "category": {
+      "id": "non-coffee",
+      "name": "Non Coffee"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Candy Berry"
+    },
+    "description": "Minuman manis dengan sentuhan rasa buah berry yang segar.",
+    "taste": {
+      "bold": 1,
+      "sweet": 5,
+      "creamy": 2,
+      "sour": 3,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "candy-berry",
+    "aiVector": [
+      1,
+      5,
+      2,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "non-coffee",
+      "sweet"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Malibu Climate",
+    "type": "drink",
+    "category": {
+      "id": "mocktail-refreshment",
+      "name": "Mocktail Refreshment"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Malibu Climate"
+    },
+    "description": "Mocktail menyegarkan dengan karakter citrus yang ringan dan cocok untuk cuaca panas.",
+    "taste": {
+      "bold": 1,
+      "sweet": 3,
+      "creamy": 1,
+      "sour": 4,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "malibu-climate",
+    "aiVector": [
+      1,
+      3,
+      1,
+      4,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "mocktail-refreshment",
+      "sour"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Melo Reverse",
+    "type": "drink",
+    "category": {
+      "id": "mocktail-refreshment",
+      "name": "Mocktail Refreshment"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Melo Reverse"
+    },
+    "description": "Mocktail dengan rasa fruity yang segar dan mudah dinikmati.",
+    "taste": {
+      "bold": 1,
+      "sweet": 3,
+      "creamy": 1,
+      "sour": 3,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "melo-reverse",
+    "aiVector": [
+      1,
+      3,
+      1,
+      3,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "mocktail-refreshment"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Grape Punch",
+    "type": "drink",
+    "category": {
+      "id": "mocktail-refreshment",
+      "name": "Mocktail Refreshment"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Grape Punch"
+    },
+    "description": "Mocktail rasa anggur yang manis, segar, dan menyenangkan.",
+    "taste": {
+      "bold": 1,
+      "sweet": 4,
+      "creamy": 1,
+      "sour": 2,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "grape-punch",
+    "aiVector": [
+      1,
+      4,
+      1,
+      2,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "mocktail-refreshment",
+      "sweet"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "BNB",
+    "type": "drink",
+    "category": {
+      "id": "spark-series",
+      "name": "Spark Series"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "BNB"
+    },
+    "description": "Spark series dengan perpaduan blueberry yang segar dan sedikit sparkling.",
+    "taste": {
+      "bold": 1,
+      "sweet": 4,
+      "creamy": 1,
+      "sour": 2,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "bnb",
+    "aiVector": [
+      1,
+      4,
+      1,
+      2,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "spark-series",
+      "sweet"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "JNB",
+    "type": "drink",
+    "category": {
+      "id": "spark-series",
+      "name": "Spark Series"
+    },
+    "price": 25000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "JNB"
+    },
+    "description": "Spark series dengan aroma jasmine yang ringan dan sensasi sparkling yang menyegarkan.",
+    "taste": {
+      "bold": 1,
+      "sweet": 3,
+      "creamy": 1,
+      "sour": 2,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "jnb",
+    "aiVector": [
+      1,
+      3,
+      1,
+      2,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "drink",
+      "spark-series"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Affogato",
+    "type": "drink",
+    "category": {
+      "id": "ice-cream-series",
+      "name": "Ice Cream Series"
+    },
+    "price": 22000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Affogato"
+    },
+    "description": "Perpaduan espresso dan es krim yang menghasilkan kombinasi pahit, manis, dan creamy.",
+    "taste": {
+      "bold": 4,
+      "sweet": 3,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "affogato",
+    "aiVector": [
+      4,
+      3,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed-social",
+      "name": "santai",
+      "score": 2
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "bold",
+      "creamy",
+      "drink",
+      "ice-cream-series"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Chocogato",
+    "type": "drink",
+    "category": {
+      "id": "ice-cream-series",
+      "name": "Ice Cream Series"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Chocogato"
+    },
+    "description": "Es krim dengan saus cokelat yang creamy dan memanjakan pencinta cokelat.",
+    "taste": {
+      "bold": 1,
+      "sweet": 4,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "chocogato",
+    "aiVector": [
+      1,
+      4,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "energetic",
+      "name": "bersemangat",
+      "score": 4
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "ice-cream-series",
+      "sweet"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Matchagato",
+    "type": "drink",
+    "category": {
+      "id": "ice-cream-series",
+      "name": "Ice Cream Series"
+    },
+    "price": 24000,
+    "image": {
+      "folder": "minuman",
+      "file": "soulful.png",
+      "alt": "Matchagato"
+    },
+    "description": "Es krim dan matcha yang berpadu menjadi minuman dessert yang lembut dan menyegarkan.",
+    "taste": {
+      "bold": 2,
+      "sweet": 3,
+      "creamy": 5,
+      "sour": 1,
+      "salty": 1,
+      "nutty": 1
+    },
+    "slug": "matchagato",
+    "aiVector": [
+      2,
+      3,
+      5,
+      1,
+      1,
+      1
+    ],
+    "badges": [],
+    "mood": {
+      "id": "relaxed",
+      "name": "relaks",
+      "score": 1
+    },
+    "currency": "IDR",
+    "recommendation": {
+      "crossSell": [],
+      "similarMenu": []
+    },
+    "rating": {
+      "score": 4.5,
+      "reviewCount": 0
+    },
+    "status": {
+      "available": true,
+      "featured": false,
+      "bestSeller": false,
+      "newMenu": false
+    },
+    "tags": [
+      "creamy",
+      "drink",
+      "ice-cream-series"
+    ]
+  }
+]

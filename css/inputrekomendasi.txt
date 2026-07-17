@@ -1,0 +1,162 @@
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+header img{
+    width:180px;
+}
+
+.section{
+    border-top:2px solid #d9d9d9;
+    padding-top:24px;
+    margin-bottom:32px;
+}
+
+.section-title{
+    display:flex;
+    gap:16px;
+    margin-bottom:20px;
+}
+
+.circle-icon{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:#1e5aa6;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.section-title p{
+    color:#555;
+}
+
+.card-group{
+    display:flex;
+    gap:16px;
+}
+
+.option-card{
+    flex:1;
+    background:white;
+    border-radius:20px;
+    border:2px solid #d9d9d9;
+    padding:24px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.option-card i{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.option-card.active{
+    background:#1e5aa6;
+    color:white;
+}
+
+.mood-group{
+    flex-wrap:wrap;
+}
+
+.mood-card{
+    width:130px;
+    height:130px;
+
+    background:white;
+    border-radius:20px;
+    border:2px solid #d9d9d9;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+}
+
+.mood-card i{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.mood-card.active{
+    background:#1e5aa6;
+    color:white;
+}
+
+h3{
+    margin:20px 0 10px;
+}
+
+.chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.chip{
+    border:none;
+    background:white;
+    border-radius:50px;
+    padding:12px 18px;
+    cursor:pointer;
+
+    border:2px solid #d9d9d9;
+    color:#1e5aa6;
+}
+
+.chip.active{
+    background:#1e5aa6;
+    color:white;
+}
+
+.recommend-btn{
+    width:100%;
+    border:none;
+    border-radius:20px;
+
+    background:#1e5aa6;
+    color:white;
+
+    padding:24px;
+
+    font-size:24px;
+    font-weight:600;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .card-group{
+        flex-direction:column;
+    }
+
+    .mood-card{
+        width:100%;
+    }
+
+}

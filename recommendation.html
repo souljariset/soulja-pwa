@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SOULJA AI Recommendation</title>
+
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/components.css">
+
+    <link rel="stylesheet"
+          href="css/animation.css">
+
+    <link rel="stylesheet"
+          href="css/pages/recommendation.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#16508B">
+
+<link rel="apple-touch-icon"
+      href="assets/icons/icon-192.png">
+
+</head>
+
+<body>
+
+<div class="container recommendation-page">
+
+    <!-- ======================================
+         HEADER
+    ======================================= -->
+
+    <header class="topbar">
+
+        <a href="input.html"
+           class="back-button">
+
+            ←
+
+        </a>
+
+    </header>
+
+    <!-- ======================================
+         LOGO
+    ======================================= -->
+
+    <img src="assets/logo.png"
+         class="logo"
+         alt="SOULJA Coffee">
+
+    <!-- ======================================
+         TITLE
+    ======================================= -->
+
+    <section class="title-section">
+
+        <h1>
+
+            AI Recommendation
+
+        </h1>
+
+        <p id="welcomeText">
+
+            Halo, Rizki 👋
+
+        </p>
+
+        <span class="subtitle">
+
+            Berdasarkan preferensimu,
+            berikut dua menu yang paling cocok.
+
+        </span>
+
+    </section>
+
+    <!-- ======================================
+         PREFERENCE
+    ======================================= -->
+
+    <section class="preference-row">
+
+        <div id="summaryType"
+             class="preference-chip">
+
+            ☕ Minuman
+
+        </div>
+
+        <div id="summaryMood"
+             class="preference-chip">
+
+            😊 Santai
+
+        </div>
+
+        <div id="summaryTaste"
+             class="preference-chip">
+
+            🥛 Creamy
+
+        </div>
+
+    </section>
+
+    <!-- ======================================
+         RECOMMENDATION LIST
+    ======================================= -->
+
+    <section class="recommendation-list">
+                <!-- ======================================
+             RECOMMENDATION #1
+        ======================================= -->
+
+        <article
+            id="recommendation1"
+            class="recommendation-card">
+
+            <div class="recommendation-image">
+
+                <img id="menuImage1"
+                     src=""
+                     alt="Menu">
+
+            </div>
+
+            <div class="recommendation-content">
+
+                <div class="recommendation-top">
+
+                    <span class="recommendation-label">
+
+                        Rekomendasi Utama
+
+                    </span>
+
+                    <span id="menuScore1"
+                          class="recommendation-score">
+
+                        98%
+
+                    </span>
+
+                </div>
+
+                <h2 id="menuName1">
+
+                    Cafe Latte
+
+                </h2>
+
+                <p id="menuCategory1"
+                   class="menu-category">
+
+                    Coffee • Latte
+
+                </p>
+
+                <div id="menuPrice1"
+                     class="menu-price">
+
+                    Rp28.000
+
+                </div>
+
+                <p id="menuDescription1"
+                   class="menu-description">
+
+                    Perpaduan espresso dengan susu segar yang
+                    lembut dan creamy.
+
+                </p>
+
+            </div>
+
+        </article>
+                <!-- ======================================
+             RECOMMENDATION #2
+        ======================================= -->
+
+        <article
+            id="recommendation2"
+            class="recommendation-card">
+
+            <div class="recommendation-image">
+
+                <img id="menuImage2"
+                     src=""
+                     alt="Menu">
+
+            </div>
+
+            <div class="recommendation-content">
+
+                <div class="recommendation-top">
+
+                    <span class="recommendation-label secondary">
+
+                        Alternatif Terbaik
+
+                    </span>
+
+                    <span id="menuScore2"
+                          class="recommendation-score">
+
+                        94%
+
+                    </span>
+
+                </div>
+
+                <h2 id="menuName2">
+
+                    Croissant
+
+                </h2>
+
+                <p id="menuCategory2"
+                   class="menu-category">
+
+                    Bakery
+
+                </p>
+
+                <div id="menuPrice2"
+                     class="menu-price">
+
+                    Rp22.000
+
+                </div>
+
+                <p id="menuDescription2"
+                   class="menu-description">
+
+                    Croissant dengan tekstur renyah di luar dan
+                    lembut di dalam, cocok sebagai pendamping kopi.
+
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- ======================================
+         RECOMMENDATION NOTE
+    ======================================= -->
+
+    <section class="recommendation-note">
+
+        <div class="note-box">
+
+            <h3>
+
+                ☕ Rekomendasi AI
+
+            </h3>
+
+            <p id="recommendationReason">
+
+                Menu dipilih berdasarkan kategori menu,
+                preferensi rasa, serta mood yang kamu pilih.
+
+            </p>
+
+        </div>
+
+    </section>
+
+        <!-- ======================================
+         ACTION
+    ======================================= -->
+
+    <section class="recommendation-action">
+
+        <a href="menu.html"
+           class="btn btn-primary">
+
+            Jelajahi Semua Menu
+
+        </a>
+
+        <a href="input.html"
+           class="btn btn-outline">
+
+            Ubah Preferensi
+
+        </a>
+
+    </section>
+
+</div>
+
+<!-- ======================================
+     DATABASE
+====================================== -->
+
+<script src="js/database.js"></script>
+
+<!-- ======================================
+     CORE
+====================================== -->
+
+<script src="js/storage.js"></script>
+
+<script src="js/components.js"></script>
+
+<script src="js/recommendationEngine.js"></script>
+
+<!-- ======================================
+     PAGE
+====================================== -->
+
+<script src="js/pages/recommendation.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", async () => {
+        try {
+
+            const registration =
+                await navigator.serviceWorker.register("./sw.js");
+
+            console.log("Service Worker Registered", registration);
+
+        } catch (error) {
+
+            console.error("Service Worker Error:", error);
+
+        }
+    });
+}
+</script>
+
+</body>
+
+</html>
