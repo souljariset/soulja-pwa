@@ -1,13 +1,23 @@
-const CACHE_NAME = "soulja-v1.0.6";
+/* ==========================================
+   SOULJA PWA
+   Production Service Worker
+========================================== */
 
-const APP_FILES = [
+const VERSION = "1.1.0";
+const CACHE_NAME = `soulja-${VERSION}`;
+
+/* ==========================================
+   FILES
+========================================== */
+
+const PRECACHE = [
 
     "/",
 
     "/index.html",
     "/input.html",
-    "/recommendation.html",
     "/menu.html",
+    "/recommendation.html",
 
     "/manifest.json",
 
@@ -17,8 +27,8 @@ const APP_FILES = [
 
     "/css/pages/landing.css",
     "/css/pages/input.css",
-    "/css/pages/recommendation.css",
     "/css/pages/menu.css",
+    "/css/pages/recommendation.css",
 
     "/js/database.js",
     "/js/storage.js",
@@ -27,8 +37,8 @@ const APP_FILES = [
 
     "/js/pages/landing.js",
     "/js/pages/input.js",
-    "/js/pages/recommendation.js",
     "/js/pages/menu.js",
+    "/js/pages/recommendation.js",
 
     "/assets/logo2.png",
 
@@ -37,29 +47,34 @@ const APP_FILES = [
 
 ];
 
-self.addEventListener("install", event=>{
 
-    console.log("===== INSTALL =====");
+/* ==========================================
+   INSTALL
+========================================== */
+
+self.addEventListener("install", event => {
 
     event.waitUntil(
 
         (async()=>{
 
-            const cache=await caches.open(CACHE_NAME);
+            const cache = await caches.open(CACHE_NAME);
 
-            for(const file of APP_FILES){
+            for(const url of PRECACHE){
 
                 try{
 
-                    await cache.add(file);
+                    const response = await fetch(url,{cache:"reload"});
 
-                    console.log("✅",file);
+                    await cache.put(url,response);
+
+                    console.log("CACHE :",url);
 
                 }
 
                 catch(e){
 
-                    console.error("❌",file);
+                    console.warn("FAILED :",url);
 
                 }
 
@@ -73,54 +88,137 @@ self.addEventListener("install", event=>{
 
 });
 
-self.addEventListener("activate",event=>{
 
-    console.log("===== ACTIVATE =====");
+/* ==========================================
+   ACTIVATE
+========================================== */
+
+self.addEventListener("activate",event=>{
 
     event.waitUntil(
 
-        caches.keys()
+        (async()=>{
 
-        .then(keys=>Promise.all(
+            const keys = await caches.keys();
 
-            keys.map(key=>{
+            await Promise.all(
 
-                if(key!==CACHE_NAME){
+                keys.map(key=>{
 
-                    return caches.delete(key);
+                    if(key!==CACHE_NAME){
 
-                }
+                        return caches.delete(key);
 
-            })
+                    }
 
-        ))
+                })
+
+            );
+
+            await self.clients.claim();
+
+        })()
 
     );
 
-    self.clients.claim();
-
 });
 
-self.addEventListener("fetch", event => {
 
-    if (event.request.mode === "navigate") {
+/* ==========================================
+   FETCH
+========================================== */
+
+self.addEventListener("fetch",event=>{
+
+    if(event.request.method!=="GET") return;
+
+    const url = new URL(event.request.url);
+
+    /* ------------------------------
+       HTML Navigation
+    ------------------------------ */
+
+    if(event.request.mode==="navigate"){
 
         event.respondWith(
 
-            fetch(event.request)
+            (async()=>{
 
-                .catch(() => caches.match("/index.html"))
+                try{
+
+                    const network = await fetch(event.request);
+
+                    const cache = await caches.open(CACHE_NAME);
+
+                    cache.put("/",network.clone());
+
+                    return network;
+
+                }
+
+                catch(e){
+
+                    const cache = await caches.open(CACHE_NAME);
+
+                    return (
+
+                        await cache.match(event.request)
+
+                        ||
+
+                        await cache.match("/")
+
+                        ||
+
+                        await cache.match("/index.html")
+
+                    );
+
+                }
+
+            })()
 
         );
 
         return;
+
     }
+
+    /* ------------------------------
+       Static Asset
+    ------------------------------ */
 
     event.respondWith(
 
-        caches.match(event.request)
+        (async()=>{
 
-            .then(response => response || fetch(event.request))
+            const cache = await caches.open(CACHE_NAME);
+
+            const cached = await cache.match(event.request);
+
+            if(cached){
+
+                return cached;
+
+            }
+
+            try{
+
+                const network = await fetch(event.request);
+
+                cache.put(event.request,network.clone());
+
+                return network;
+
+            }
+
+            catch(e){
+
+                return cached;
+
+            }
+
+        })()
 
     );
 
