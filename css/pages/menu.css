@@ -49,62 +49,47 @@
     top: 8px;
 }
 
-.back-button {
+/* Back button - halaman menu */
+.menu-header .circle-icon {
     width: 58px;
     height: 58px;
-    min-width: 58px;
-    flex-shrink: 0;
     border-radius: 50%;
     background: var(--primary);
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-decoration: none;
-    box-shadow: 0 10px 24px rgba(30, 90, 166, .20);
-    transition: .25s;
+    justify-content: center;
     padding: 0;
     box-sizing: border-box;
+    flex-shrink: 0;
+    box-shadow: 0 10px 24px rgba(30, 90, 166, .20);
+    transition: .25s;
 }
 
-.back-button:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 14px 30px rgba(30,90,166,.28);
-
+.menu-header .circle-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-.back-button:active{
-
-    transform:scale(.96);
-
+.menu-header .circle-icon img {
+    width: 32px;
+    height: 32px;
+    max-width: none;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    transform: translate(-1px, -1px);
 }
 
-.back-button img {
-width: 32px;
-height: 32px;
-max-width: none;
-object-fit: contain;
-display: block;
-flex-shrink: 0;
-transform: translate(-1px, -1px);
+.menu-header .circle-icon:hover {
+    transform: translateY(-2px);
 }
 
-.back-button .material-symbols-outlined{
-
-    font-size:34px;
-
-    color:#FFFFFF;
-    display:flex;
-align-items:center;
-justify-content:center;
-
-line-height:1;
-width:1em;
-height:1em;
-
-transform:translateX(-1px);
-
+.menu-header .circle-icon:active {
+    transform: scale(.96);
 }
 
 /* ==========================================
