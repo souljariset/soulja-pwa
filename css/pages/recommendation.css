@@ -36,44 +36,37 @@
 
 }
 
-.back-button{
-
-    width:64px;
-
-    height:64px;
-
-    border-radius:50%;
-
-    background:#155295;
-
-    color:var(--primary);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-decoration:none;
-
-    font-size:34px;
-
-    font-weight:700;
-
-    line-height:1;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.06);
-
-    transition:.25s;
-
+/* Back button - halaman rekomendasi */
+.circle-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
-.back-button:hover{
+.circle-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
-    transform:translateX(-4px);
-
-    box-shadow:var(--shadow-md);
-
+.circle-icon img {
+    width: 32px;
+    height: 32px;
+    max-width: none;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    transform: translate(-1px, -1px);
 }
 
 /* ==========================================
