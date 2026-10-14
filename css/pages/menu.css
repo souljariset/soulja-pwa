@@ -49,32 +49,21 @@
     top: 8px;
 }
 
-.back-button{
-
-    width:58px;
-
-    height:58px;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-decoration:none;
-
-    box-shadow:0 10px 24px rgba(30,90,166,.20);
-
-    transition:.25s;
-
+.back-button {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(30, 90, 166, .20);
+    transition: .25s;
     padding: 0;
-    
     box-sizing: border-box;
-
 }
 
 .back-button:hover{
