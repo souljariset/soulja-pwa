@@ -673,7 +673,7 @@ const DATABASE = {
     price: 24000,
     image: {
       folder: "minuman",
-      file: "Butterscoth.png",
+      file: "Butterscotch.png",
       alt: "Butterscotch"
     },
     description: "Es kopi susu dengan rasa karamel butterscotch yang manis dan creamy.",
