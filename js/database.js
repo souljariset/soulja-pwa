@@ -1403,8 +1403,8 @@ const DATABASE = {
     name: "Original Cheesecake",
     type: "food",
     category: {
-      id: "dessert",
-      name: "Dessert"
+      id: "snack",
+      name: "Snack"
     },
     price: 30000,
     image: {
@@ -1452,7 +1452,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "dessert",
+      "snack",
       "food",
       "soft",
       "sweet"
@@ -1463,8 +1463,8 @@ const DATABASE = {
     name: "Original Matcha Cheesecake",
     type: "food",
     category: {
-      id: "dessert",
-      name: "Dessert"
+      id: "snack",
+      name: "Snack"
     },
     price: 32000,
     image: {
@@ -1512,7 +1512,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "dessert",
+      "snack",
       "food",
       "soft"
     ]
@@ -1522,8 +1522,8 @@ const DATABASE = {
     name: "Brownies",
     type: "food",
     category: {
-      id: "dessert",
-      name: "Dessert"
+      id: "snack",
+      name: "Snack"
     },
     price: 12000,
     image: {
@@ -1572,7 +1572,7 @@ const DATABASE = {
     },
     tags: [
       "chocolate",
-      "dessert",
+      "snack",
       "food",
       "soft",
       "sweet"
@@ -1583,8 +1583,8 @@ const DATABASE = {
     name: "Classic Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1632,7 +1632,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "cookies",
+      "sizzle-bakes",
       "food",
       "sweet"
     ]
@@ -1642,8 +1642,8 @@ const DATABASE = {
     name: "Red Velvet Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1691,7 +1691,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "cookies",
+      "sizzle-bakes",
       "food",
       "sweet"
     ]
@@ -1701,8 +1701,8 @@ const DATABASE = {
     name: "Monster Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1750,7 +1750,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "cookies",
+      "sizzle-bakes",
       "food",
       "sweet"
     ]
@@ -1760,8 +1760,8 @@ const DATABASE = {
     name: "Matchamond Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1809,7 +1809,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "cookies",
+      "sizzle-bakes",
       "food"
     ]
   },
@@ -1818,8 +1818,8 @@ const DATABASE = {
     name: "Biscoff Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1867,7 +1867,7 @@ const DATABASE = {
       newMenu: false
     },
     tags: [
-      "cookies",
+      "sizzle-bakes",
       "food",
       "sweet"
     ]
@@ -1877,8 +1877,8 @@ const DATABASE = {
     name: "Double Choco Soft Cookies",
     type: "food",
     category: {
-      id: "cookies",
-      name: "Cookies"
+      id: "sizzle-bakes",
+      name: "Sizzle Bakes"
     },
     price: 15000,
     image: {
@@ -1927,7 +1927,7 @@ const DATABASE = {
     },
     tags: [
       "chocolate",
-      "cookies",
+      "sizzle-bakes",
       "food",
       "sweet"
     ]
