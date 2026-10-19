@@ -1344,8 +1344,8 @@ const DATABASE = {
     name: "Cranberry Cream Cheese",
     type: "food",
     category: {
-      id: "soft-sourdough",
-      name: "Soft Sourdough"
+      id: "snack",
+      name: "Snack"
     },
     price: 28000,
     image: {
@@ -1395,7 +1395,7 @@ const DATABASE = {
     tags: [
       "food",
       "soft",
-      "soft-sourdough"
+      "snack"
     ]
   },
   {
