@@ -3,7 +3,7 @@
    Production Service Worker
 ========================================== */
 
-const VERSION = "1.1.3";
+const VERSION = "1.1.4";
 const CACHE_NAME = `soulja-${VERSION}`;
 
 /* ==========================================
